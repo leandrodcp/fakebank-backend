@@ -1,5 +1,7 @@
 # fakebank-backend
 
+- Java 11
+- Springboot
 - Criação de uma nova conta bancária para um cliente
 - Pode ter um valor de depósito inicial.
 - Um único cliente pode ter várias contas bancárias.
