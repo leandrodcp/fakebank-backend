@@ -31,3 +31,5 @@ build/
 
 ### VS Code ###
 .vscode/
+/app.db.mv.db
+/.jpb/persistence-units.xml
