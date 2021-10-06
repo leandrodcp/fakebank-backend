@@ -49,9 +49,12 @@ public class AccountRest {
 
     @PutMapping("{id}")
     public Account update(@PathVariable Long id, @RequestBody Account account) {
-        findById(id);
-        findCustomer(account.getCustomerId());
+        var old = findById(id);
+        if (account.getCustomerId() != null) {
+            findCustomer(account.getCustomerId());
+        }
         account.setId(id);
+        account.setCustomerId(old.getCustomerId());
         return accountRepo.save(account);
     }
 

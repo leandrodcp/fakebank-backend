@@ -29,3 +29,6 @@ mvnw spring-boot:run
 
 ## Docker
 See Dockerfile
+
+## Api Documentation/Swagger
+http://localhost:8080/swagger-ui/
